@@ -14,7 +14,7 @@ public class test {
         //上转型，用父类的引用子类的对象
         Parent p=new Son();
         //调用父类中有的方法
-        p.grow();
+        	p.grow();
         //p.dance();这里会报错，因为父类中没有dance()方法
         
         //对进行过上转型的对象，进行强制下转型
