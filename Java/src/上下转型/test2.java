@@ -1,3 +1,4 @@
+package 上下转型;
 abstract class Parent1{
     abstract void grow();
 }
