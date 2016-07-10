@@ -3,18 +3,18 @@ abstract class Parent1{
 }
 class Son1 extends Parent1{
     void grow(){
-        System.out.println("ÎÒ±È¸¸Ç×³É³¤Ìõ¼şºÃÒ»µã£ºSon1");
+        System.out.println("æˆ‘æ¯”çˆ¶äº²æˆé•¿æ¡ä»¶å¥½ä¸€ç‚¹ï¼šSon1");
     }
     void play(){
-        System.out.println("ÎÒ»áÌßÇò");
+        System.out.println("æˆ‘ä¼šè¸¢çƒ");
     }
 }
 class Daughter extends Parent1{
     void grow(){
-        System.out.println("ÎÒ±È¸¸Ç×³É³¤Ìõ¼şºÃºÜ¶à:daughter");
+        System.out.println("æˆ‘æ¯”çˆ¶äº²æˆé•¿æ¡ä»¶å¥½å¾ˆå¤š:daughter");
     }
     void dance(){
-        System.out.println("ÎÒ»áÌøÎè");
+        System.out.println("æˆ‘ä¼šè·³èˆ");
     }
 }
 public class test2 {
@@ -25,13 +25,13 @@ public class test2 {
         show(p2);
     }
     public static void show(Parent1 p){
-            //ÏÖ½«¸¸ÀàÖĞÓĞµÄ·½·¨Êä³ö
+            //ç°å°†çˆ¶ç±»ä¸­æœ‰çš„æ–¹æ³•è¾“å‡º
             p.grow();
-            //¶Ô½øĞĞ¹ıÉÏ×ªĞÍµÄ¶ÔÏó½øĞĞÀàĞÍÅĞ¶Ï£¬È»ºó½øĞĞÏàÓ¦µÄÇ¿ÖÆÏÂ×ªĞÍ
+            //å¯¹è¿›è¡Œè¿‡ä¸Šè½¬å‹çš„å¯¹è±¡è¿›è¡Œç±»å‹åˆ¤æ–­ï¼Œç„¶åè¿›è¡Œç›¸åº”çš„å¼ºåˆ¶ä¸‹è½¬å‹
             if(p instanceof Son1){
-                //ÅĞ¶ÏÊÇÄÄ¸öÀàµÄÉÏ×ªĞÍ¶ÔÏó£¬È»ºó½øĞĞÏÂ×ªĞÍ
+                //åˆ¤æ–­æ˜¯å“ªä¸ªç±»çš„ä¸Šè½¬å‹å¯¹è±¡ï¼Œç„¶åè¿›è¡Œä¸‹è½¬å‹
                 Son1 s=(Son1)p;
-                //µ÷ÓÃ×ÓÀàÖĞµÄ·½·¨
+                //è°ƒç”¨å­ç±»ä¸­çš„æ–¹æ³•
                 s.play();
             }else if(p instanceof Daughter){
                 Daughter d=(Daughter)p;

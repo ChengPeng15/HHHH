@@ -3,23 +3,23 @@ abstract class Parent{
 }
 class Son extends Parent{
     void grow(){
-        System.out.println("ÎÒ±È¸¸Ç×³É³¤Ìõ¼şºÃ");
+        System.out.println("æˆ‘æ¯”çˆ¶äº²æˆé•¿æ¡ä»¶å¥½");
     }
     void dance(){
-        System.out.println("ÎÒ»áÌßÇò");
+        System.out.println("æˆ‘ä¼šè¸¢çƒ");
     }
 }
 public class test {
     public static void main(String[] args) {
-        //ÉÏ×ªĞÍ£¬ÓÃ¸¸ÀàµÄÒıÓÃ×ÓÀàµÄ¶ÔÏó
+        //ä¸Šè½¬å‹ï¼Œç”¨çˆ¶ç±»çš„å¼•ç”¨å­ç±»çš„å¯¹è±¡
         Parent p=new Son();
-        //µ÷ÓÃ¸¸ÀàÖĞÓĞµÄ·½·¨
+        //è°ƒç”¨çˆ¶ç±»ä¸­æœ‰çš„æ–¹æ³•
         p.grow();
-        //p.dance();ÕâÀï»á±¨´í£¬ÒòÎª¸¸ÀàÖĞÃ»ÓĞdance()·½·¨
+        //p.dance();è¿™é‡Œä¼šæŠ¥é”™ï¼Œå› ä¸ºçˆ¶ç±»ä¸­æ²¡æœ‰dance()æ–¹æ³•
         
-        //¶Ô½øĞĞ¹ıÉÏ×ªĞÍµÄ¶ÔÏó£¬½øĞĞÇ¿ÖÆÏÂ×ªĞÍ
+        //å¯¹è¿›è¡Œè¿‡ä¸Šè½¬å‹çš„å¯¹è±¡ï¼Œè¿›è¡Œå¼ºåˆ¶ä¸‹è½¬å‹
         Son s=(Son)p;
-        //µ÷ÓÃ×ÓÀàÖĞµÄ·½·¨
+        //è°ƒç”¨å­ç±»ä¸­çš„æ–¹æ³•
         s.dance();
     }
 }
