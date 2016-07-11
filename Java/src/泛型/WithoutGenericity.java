@@ -35,6 +35,14 @@ public class WithoutGenericity {
 	}
 	
 	
+	private static void StringTyep1(){
+		WithoutGenericity w = new WithoutGenericity();
+		System.out.println("x="+WithoutGenericity.x+" y="+w.y);
+		WithoutGenericity.setX("12");
+		w.setY("13");
+		System.out.println("x="+WithoutGenericity.x+" y="+w.y);
+	}
+	
 	private static void IntTyep(){
 		System.out.println("x="+x);
 	}
@@ -52,6 +60,7 @@ public class WithoutGenericity {
 	public static void main(String[] args) {
 		StringTyep();
 		IntTyep();
+		StringTyep1();//这个时候静态变量在上一次已经被改了，想一想如果是多线程会不会很可怕
 	}
 
 	
