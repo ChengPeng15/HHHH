@@ -1,7 +1,7 @@
 package 泛型;
 
 public class WithoutGenericity {
-	private static Object x;
+	private static Object x=9;
 	private Object y;
 	
 	public Object getX() {
@@ -28,34 +28,33 @@ public class WithoutGenericity {
 	
 	private static void StringTyep(){
 		WithoutGenericity w = new WithoutGenericity();
+		System.out.println("x="+WithoutGenericity.x+" y="+w.y);
 		WithoutGenericity.setX("12");
 		w.setY("13");
-		System.out.println("x="+x+" y="+w.y);
+		System.out.println("x="+WithoutGenericity.x+" y="+w.y);
 	}
 	
 	
 	private static void IntTyep(){
-		x=12;
+		System.out.println("x="+x);
 	}
 
 	private static void DoubleTyep(){
 		
 	}
 
-
+/*
+ * 这个结果很奇怪
+ * 	x=9 y=null
+	x=12 y=13
+	x=12
+ */
 	public static void main(String[] args) {
 		StringTyep();
+		IntTyep();
 	}
 
 	
 }
 
 
-//class cc{
-//	void aa (){
-//	WithoutGenericity w = new WithoutGenericity();
-//	w.setX("12");
-//	w.setY("13");
-//	System.out.println("x="+w.x+" y="+w.y);
-//}
-//}
