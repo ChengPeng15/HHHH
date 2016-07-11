@@ -1,5 +1,5 @@
 package 泛型;
-
+//http://www.weixueyuan.net/view/6003.html  这个可以解答问题
 
 public class 外部调用静态方法里面的东西怎么变了 {
 	static int a=9;
