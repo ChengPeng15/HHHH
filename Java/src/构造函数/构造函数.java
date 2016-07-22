@@ -7,6 +7,9 @@ public class 构造函数 {
     private int petalCount = 0;
     private String fnameString = new String("null");
 
+    static {
+    	System.out.println("静态代码块");
+    }
     public 构造函数(int i) {
         petalCount = i;
         

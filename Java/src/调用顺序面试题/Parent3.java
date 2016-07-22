@@ -30,6 +30,7 @@ public class Parent3 {
     	父类--初始化块
     	父类--构造器
     	*/
+    	new Parent3();
 	   }   
 }       
 
