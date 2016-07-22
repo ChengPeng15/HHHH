@@ -1,4 +1,4 @@
-
+package 待整理;
 
 public class 变量 {
 //	public static void main(String [] args){

@@ -1,3 +1,4 @@
+package 待整理;
 
 public class 三目运算符 {
 	//x?a:b?c:d

@@ -1,3 +1,5 @@
+package 待整理;
+
 import java.util.HashMap;
 //map不允许重复
 public class MapSize {

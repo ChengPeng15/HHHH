@@ -1,3 +1,5 @@
+package 待整理;
+
 public class final当作变量 {
 	public static Integer test( Integer i){
 //		System.out.println(i);

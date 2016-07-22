@@ -1,3 +1,5 @@
+package 待整理;
+
 class 另一个calss但是不能为public{
 	
 }

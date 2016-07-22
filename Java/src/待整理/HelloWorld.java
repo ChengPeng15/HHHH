@@ -1,3 +1,5 @@
+package 待整理;
+
 import java.util.Arrays;
 class Student{
 	int age;
