@@ -13,7 +13,8 @@ public class 十六进制 {
 		System.out.println(Integer.toBinaryString(0xa));//10转为2进制
 		System.out.println(Integer.toBinaryString(0xA));//10转为2进制
 		System.out.println(0xA); 
-		
+		float r=5.01f;
+		System.out.println(r);
 		System.out.println(Integer.toHexString(14));//
 
 
