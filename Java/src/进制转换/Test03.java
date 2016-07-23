@@ -16,7 +16,7 @@ public class Test03 {
 							Math.pow(2, 6)+
 							Math.pow(2, 7));
 		
-		System.out.println(Math.pow(2, 8)-1);//这个是第二张写法
+		System.out.println(Math.pow(2, 8)-1);//这个是第二种写法
 	}
 
 }
