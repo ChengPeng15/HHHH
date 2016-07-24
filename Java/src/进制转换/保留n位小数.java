@@ -29,6 +29,17 @@ public class 保留n位小数 {
 		不过有的时候需要直接赋值大的数字，如果想直接赋最大值的时候只需要转换一下就行了Long.parseLong()
 		2的31次方－1=2147483648－1
 		 */
+		
+		double sqrt20 = Math.sqrt(20);
+		double sqrt10 = Math.sqrt(10);
+		double result = (sqrt20+sqrt10)/(sqrt20-sqrt10);
+		System.out.println(result);
+		System.out.println("进行四舍五入后");
+		result = Math.round(10*result)/10.0;
+		System.out.println(result);
+		char d ='女';//可以输入一个中文字符
+		float height = 1.89f;//java默认事double 所以后面加一个f或者F
+
 
 	}
 
