@@ -14,8 +14,6 @@ public class 包装类练习 {
 		System.out.println(Integer.toBinaryString(16));
 		System.out.println(Integer.toHexString(10));
 
-
-
 	}
 
 }
