@@ -9,6 +9,9 @@ public class 交换a和b的巧妙解法 {
 		b=a-b;
 		a=a-b;
 		System.out.println(a+","+b);
+		double y =5.3;
+		System.out.println(y);
+		System.out.println(1+2<3+5);
 	}
 
 }
