@@ -11,10 +11,13 @@ public class 整数类型 {
 //		         0 0000011  3的补码
 //		         1 0000010   计算结果
 //		         1 1111110   计算结果队形补码  ＝＝＝＝＝＝－126
+		
+		byte b3 =125;
+		byte b4 =(byte) (125+3);
+		System.out.println(Math.pow(2, 16));//65536
 	}
 	
 	
-	byte b3 =125;
-	byte b4 =(byte) (125+3);
+
 		
 }
