@@ -1,4 +1,4 @@
-package 待整理;
+package 基础;
 
 import java.util.HashMap;
 //map不允许重复

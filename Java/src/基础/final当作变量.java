@@ -1,4 +1,4 @@
-package 待整理;
+package 基础;
 
 public class final当作变量 {
 	public static Integer test( Integer i){

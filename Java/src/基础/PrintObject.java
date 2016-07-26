@@ -1,4 +1,4 @@
-package 待整理;
+package 基础;
 
 class Person
 {

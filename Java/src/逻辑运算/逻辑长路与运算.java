@@ -7,6 +7,8 @@ public class 逻辑长路与运算 {
 		System.out.println(Integer.toBinaryString(23));
 		System.out.println("  "+Integer.toBinaryString(13&23));
 		System.out.println(13&23);
+		
+		System.out.println(false&(5<3));
 	}
 
 }

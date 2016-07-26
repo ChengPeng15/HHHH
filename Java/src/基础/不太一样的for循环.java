@@ -1,4 +1,4 @@
-package 待整理;
+package 基础;
 
 public class 不太一样的for循环 {
 
