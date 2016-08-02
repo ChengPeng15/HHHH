@@ -23,12 +23,14 @@ public class next和nextline区别 {
 
 		while(sc.hasNext()){
 			String s1,s2;  
-			System.out.print("请输入第一个字符串："); 
+			System.out.println("请输入第一个字符串："); 
+			
+			System.out.println("请输入第二个字符串：");  
+			
 			s1=sc.nextLine(); //nextLine是都一行
-			System.out.print("请输入第二个字符串：");  
 			s2=sc.next(); 
-			System.out.println("输入的字符串dd是："+s1+":"+s2);
-		}
+			System.out.println("输入的字符串是："+s1+":"+s2);
+		}//顶顶顶
 		/*
 		
 		String s1,s2;  
