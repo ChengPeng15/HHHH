@@ -2,8 +2,14 @@ package Java集合;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.GregorianCalendar;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
 
 /**
@@ -59,20 +65,29 @@ public class Book implements Comparable { // 定义名为Book的类，默认继�
 				8), "吴承恩");
 		Book b5 = new Book(10004, "天龙八部", 10.4, new GregorianCalendar(2011, 9,
 				23), "搜狐");
-		TreeMap tm = new TreeMap();
-		tm.put(b1, new Integer(255));
-		tm.put(b2, new Integer(122));
-		tm.put(b3, new Integer(688));
-		tm.put(b4, new Integer(453));
-		tm.put(b5, new Integer(40));
-		Iterator it = tm.keySet().iterator();
-		Object key = null, value = null;
-		Book bb = null;
-		while (it.hasNext()) {
-			key = it.next();
-			bb = (Book) key;
-			value = tm.get(key);
-			System.out.println(bb.toString() + "\t库存：" + tm.get(key));
-		}
+//		TreeMap tm = new TreeMap();
+//		tm.put(b1, new Integer(255));
+//		tm.put(b2, new Integer(122));
+//		tm.put(b3, new Integer(688));
+//		tm.put(b4, new Integer(453));
+//		tm.put(b5, new Integer(40));
+//		Iterator it = tm.keySet().iterator();
+//		Object key = null, value = null;
+//		Book bb = null;
+//		while (it.hasNext()) {
+//			key = it.next();
+//			bb = (Book) key;
+//			value = tm.get(key);
+//			System.out.println(bb.toString() + "\t库存：" + tm.get(key));
+//		}
+		List list = new ArrayList();
+		list.add(b1);
+		list.add(b2);
+		list.add(b3);
+		list.add(b4);
+		list.add(b5);
+		Collections.sort(list);
+		
+		System.out.println(list.toString());
 	}
 }
