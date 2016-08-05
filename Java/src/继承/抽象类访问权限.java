@@ -1,6 +1,6 @@
 package 继承;
 
- abstract class aaa{// 类名不区分大小写 不能跟其他重名
+ abstract class 抽象类父类{// 类名不区分大小写 不能跟其他重名
 	protected abstract void ss();
 	int aa = 100;
 	void a(){
@@ -9,7 +9,7 @@ package 继承;
 	}
 }
 
-public class 抽象类访问权限 extends aaa {
+public class 抽象类访问权限 extends 抽象类父类 {
 	public static void main(String[] args) {
 		抽象类访问权限  a= new 抽象类访问权限();
 		a.ss();
