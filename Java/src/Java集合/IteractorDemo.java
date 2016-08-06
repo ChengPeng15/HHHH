@@ -16,15 +16,17 @@ public class IteractorDemo {
 		System.out.println(list.toString());
 
 		Iterator<String> iterList = list.iterator();
+		String str="";
 		while(iterList.hasNext()){
-			String str = iterList.next();
+			str = iterList.next();
 			if("A".equals(str)){
-				iterList.remove();
+				str="AA";
 			}else{
 				System.out.println(str);
 			}
 		}
-		
+		System.out.println(list.toString());
+
 	}
 	
 	/**
