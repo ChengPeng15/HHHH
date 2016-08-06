@@ -20,7 +20,6 @@ public class ListDemo01 {
 		}
 //		lists.remove(1);
 		lists.remove("A");//
-
 		System.out.println("After Deleting");
 		for(int i =0;i<lists.size();i++){
 			System.out.println(lists.get(i));
