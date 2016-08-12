@@ -8,6 +8,8 @@ public class FirstThread2 extends Thread
 		for ( int i=1; i < 20 ; i++ )
 		{
 			System.out.println(getName() +  " ---" + i);
+//			System.out.println(this.getName() +  " ---" + i);
+
 		}
 	}
 	public static void main(String[] args)
