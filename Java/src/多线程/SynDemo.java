@@ -34,7 +34,7 @@ class Data {
 }
 
 class ThreadC extends Thread {
-    Data d;//？这个跟  int i   或者static那种一样？
+    Data d;//？这个跟  int i   或者static那种一样？ 因为是同一个data饮用
     public ThreadC(Data d) {
         this.d = d;
     }
