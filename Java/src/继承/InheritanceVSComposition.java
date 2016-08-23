@@ -1,5 +1,5 @@
 package 继承;
-
+//组合
 class Insect {
     private int size;
     private String color;
