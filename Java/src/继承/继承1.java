@@ -4,7 +4,11 @@ class 父亲 {
 		System.out.println("father method");
 	}
 }
-public class 继承1 extends 父亲{
+
+interface haha{
+	 void tell();
+}
+public class 继承1 extends 父亲 implements haha{
 
 	public static void main(String[] args) {
 		继承1 son1 = new 继承1();
