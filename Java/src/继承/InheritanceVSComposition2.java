@@ -1,5 +1,5 @@
 package 继承;
-
+//组合用法
 interface Attack {
     public void move();
     public void attack();

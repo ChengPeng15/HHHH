@@ -14,29 +14,36 @@ public class 集合类转化 {
 	 */
 	public static void main(String[] args) {
 		
-		testList2Array();
-        testArray2List();
-        testSet2List();
-		testList2Set();
-		testSet2Array();
-		testArray2Set();
-		testMap2Set();
+//		testList2Array();
+//        testArray2List();
+//        testSet2List();
+//		testList2Set();
+//		testSet2Array();
+//		testArray2Set();
+//		testMap2Set();
 		testMap2List();
 	}
 
 	private static void testMap2List() {
 		
-		Map<String, String> map = new HashMap<String, String>();  
-        map.put("A", "ABC");  
-        map.put("K", "KK");  
-        map.put("L", "LV");  
+		Map<Map<String,String>, Map<String,String>> map = new HashMap<Map<String,String>, Map<String,String>>();  
+		Map<String,String> map1= new HashMap<String,String>();
+		map1.put("A", "ABC");  
+        map1.put("K", "KK");  
+        map1.put("L", "LV");  
         
-		// 将Map Key 转化为List    
-        List<String> mapKeyList = new ArrayList<String>(map.keySet());  
+    	Map<String,String> map2= new HashMap<String,String>();
+		map2.put("A1", "ABC1");  
+        map2.put("K1", "KK1");  
+        map2.put("L1", "LV1");  
+        map.put(map1,map2);
+        
+//		 将Map Key 转化为List    
+        List<Map<String,String>> mapKeyList = new ArrayList<Map<String,String>>(map.keySet());  
         System.out.println("mapKeyList:"+mapKeyList);
         
         // 将Map Key 转化为List    
-        List<String> mapValuesList = new ArrayList<String>(map.values());  
+        List<Map<String,String>> mapValuesList = new ArrayList<Map<String,String>>(map.values());  
         System.out.println("mapValuesList:"+mapValuesList);
         
 	}
@@ -125,7 +132,7 @@ public class 集合类转化 {
         String[] ss = {"JJ","KK"};  
         List<String> list1 = Arrays.asList(ss);  
         List<String> list2 = Arrays.asList("AAA","BBB");  
-        list1.add("ttttttt");
+//        list1.add("ttttttt");
         System.out.println("?"+list1);  
         System.out.println(list2);  
      

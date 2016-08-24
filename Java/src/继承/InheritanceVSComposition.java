@@ -1,5 +1,5 @@
 package 继承;
-//组合
+//继承
 class Insect {
     private int size;
     private String color;
@@ -7,7 +7,7 @@ class Insect {
     public Insect(int size, String color) {
         this.size = size;
         this.color = color;
-        System.out.println("father:"+size+color);
+        System.out.println("father:"+size+" "+color);
 
     }
  
