@@ -68,14 +68,16 @@ public class ListReverse {
 	 * 递归调用
 	 */
 	private static Node Revert2(Node current) {
-	     if (current == null || current.next == null){
+		//current!=null 是拒绝空链表判断用的
+
+	     if (current == null || current.next == null){	    	
 	    	 return current;  
 	     }
 	     Node nextNode = current.next;  
 	     current.next = null;  
 	     Node reverseRest = Revert2(nextNode);  
 	     nextNode.next = current;  
-	     return reverseRest; 
+	     return reverseRest; //其实这里面每次return的节点都是一样的
 	}
 
 }
