@@ -1,4 +1,4 @@
-package 剑指office;
+package 剑指offer;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Stack;

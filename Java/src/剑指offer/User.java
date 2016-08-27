@@ -1,4 +1,4 @@
-package 剑指office;
+package 剑指offer;
 
 public class User {
 	

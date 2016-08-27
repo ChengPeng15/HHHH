@@ -1,4 +1,4 @@
-package 剑指office;
+package 剑指offer;
 
 /*
  * 第三题二维数组查找

@@ -1,4 +1,4 @@
-package 剑指office;
+package 剑指offer;
 
 /*
  * String strStringType="my string"; //创建一个字符串变量strStringType

@@ -1,4 +1,4 @@
-package 剑指office;
+package 剑指offer;
 /*
  * 输入字母判断第几列
  */

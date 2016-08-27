@@ -1,4 +1,4 @@
-package 剑指office;
+package 剑指offer;
 
 /*
  * 递归实现

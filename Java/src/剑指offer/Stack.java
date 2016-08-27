@@ -1,4 +1,4 @@
-package 剑指office;
+package 剑指offer;
 
 public interface Stack<T> {
 	public void clear();
