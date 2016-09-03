@@ -16,10 +16,11 @@ public class Transform {
         }
         char[] chas1 = str1.toCharArray();
         char[] chas2 = str2.toCharArray();
-        int[] map = new int[256];
+        int[] map = new int[65536];
         for (int i = 0; i < chas1.length; i++) {
             map[chas1[i]]++;
         }
+        System.out.println(map['a']);
         for (int i = 0; i < chas2.length; i++) {
             if (map[chas2[i]]-- == 0) {
                 return false;
@@ -27,4 +28,14 @@ public class Transform {
         }
         return true;
     }
+    
+    
+    public static void main(String[] args) {
+//		new Transform().chkTransform("abca", 4, "baac", 4);
+    	int[]array=new int [255];
+    	array['b']=3;
+    	array['c']=31;
+    	array['d']=311;
+    	System.out.println(array);
+	}
 }

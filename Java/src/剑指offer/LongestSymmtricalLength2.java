@@ -22,6 +22,11 @@ public class LongestSymmtricalLength2 {
 		if (str == null || str.length() == 0) {
 			return -1;
 		}
+		//去掉aa为1实际为2 的bug
+		if(str.length()==2){
+			if(str.charAt(0)==str.charAt(1))
+				return 2;
+		}
 		int symLen = 1;
 		char[] letter = str.toCharArray();
 		int strLen = str.length();
