@@ -21,6 +21,8 @@ public class 字符数组 {
 		System.out.println(chars.length);
 		String str2 = String.valueOf(chars);
 		System.out.println(str2);
+		System.out.println((int)'a');
+		System.out.println(str1.charAt(3));
 	}
 
 }
