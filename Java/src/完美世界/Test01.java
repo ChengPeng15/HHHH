@@ -9,7 +9,7 @@ public class Test01 {
 		b+=(++b);
 //		(c++) +=c;
 //		(++d) +=(d++);
-//		System.out.println(a+":"+b);
+		System.out.println(a+":"+b);
 		
 		
 //		Integer i01 = 59;
