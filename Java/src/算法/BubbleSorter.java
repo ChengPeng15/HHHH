@@ -32,7 +32,6 @@ interface Sorter {
 /**
  * 冒泡排序
  * 
- * @author骆昊
  *
  */
 public class BubbleSorter implements Sorter {
