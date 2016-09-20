@@ -13,10 +13,10 @@ public class ExceptionDemo {
 		Exp e = null;
 		e = new Exp();
 	
-		int temp = 0;
+		int temp = 10;
 		try{
 			temp = e.a/e.b;//可能有错误的要放在try里面才能行
-			System.out.println("如果有异常，写到这里也不运行");
+			System.out.println("try");
 		}catch(NullPointerException e1){
 			System.out.println(e1);
 		}
@@ -25,7 +25,8 @@ public class ExceptionDemo {
 		}finally{
 			System.out.println("有没有异常，都执行");
 		}
-
+//		temp = e.a/e.b;//如果写try catch  最后面的不输入，层序找终端
+		System.out.println("如果有异常，写到这里也不运行");
 
 	}
 
