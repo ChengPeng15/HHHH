@@ -1,6 +1,6 @@
 package 继承;
 
-class 重载父类{
+class  重写父类{
 	void a(){
 		System.out.println("父类a");
 	}
@@ -11,7 +11,7 @@ class 重载父类{
 }
 
 
-class 重载子类 extends 重载父类{
+class  重写子类 extends  重写父类{
 	void a(){
 		System.out.println("子类a");
 	}
@@ -23,9 +23,9 @@ class 重载子类 extends 重载父类{
 	}
 }
 
-public class 重载的坑 {
+public class  重写的坑 {
 	public static void main(String[] args) {
-		重载父类 a = new 重载子类();
+		 重写父类 a = new  重写子类();
 		a.b();
 	}
 
