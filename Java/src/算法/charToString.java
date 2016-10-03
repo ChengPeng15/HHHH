@@ -7,6 +7,19 @@ public class charToString {
 		String str="Hello World";
 		char[]array=str.toCharArray();
 		System.out.println(new String(array));
-	}
+		StringBuffer str1 = new StringBuffer();
+//		 public StringBuffer() {
+//		        super(16);
+//		    }
+//
+//		    public StringBuffer(int capacity) {
+//		        super(capacity);
+//		    }
+//
+//		    public StringBuffer(String str) {
+//		        super(str.length() + 16);
+//		        append(str);
+//		    }
 
+	}
 }
