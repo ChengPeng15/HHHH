@@ -9,10 +9,10 @@ public class Test {
 //         System.out.println("finally"); 
 //        } 
 //      }
-	
 	char  a='张';
 	public static void main(String args[]){
 	    String b="张";
+	    String b1="张1";
 //	    System.out.print(a); 
 	    System.out.print(b);
 	}
