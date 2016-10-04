@@ -73,5 +73,6 @@ public class Cow
 	{
 		Cow cow = new Cow(378.9);
 		cow.test();
+//		cow.new CowLeg().info();
 	}
 }
