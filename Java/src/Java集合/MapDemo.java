@@ -16,7 +16,6 @@ public class MapDemo {
 		map.put(null,null);
 		map.put(null,"1");
 		map.put(null,"11");//key重复保存最新的
-
 		System.out.println(map.size());
 		System.out.println(map);
 		String str = map.get("key1");
