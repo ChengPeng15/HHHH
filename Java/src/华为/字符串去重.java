@@ -22,10 +22,10 @@ public class 字符串去重 {
 		if(str==null) return;
 		char[] array=str.toCharArray();
 		
-		TreeMap<String,Integer> map = new TreeMap<String,Integer>(new Comparator<String>() {
+		TreeMap<Character,Integer> map = new TreeMap<Character,Integer>(new Comparator<Character>() {
 
 			@Override
-			public int compare(String o1, String o2) {
+			public int compare(Character o1, Character o2) {
 				
 				return o2.compareTo(o1);
 			}
@@ -33,13 +33,13 @@ public class 字符串去重 {
 				
 		
 		for (int i = 0; i < array.length; i++) {
-			String key =String.valueOf(array[i]);
+			Character key =array[i];
 			if(i==0){ 
 				map.put(key,1);
 			continue;
 			}else{
 				if(map.containsKey(key)){
-					Integer value = map.get(String.valueOf(array[i]))+1;
+					Integer value = map.get(array[i])+1;
 					map.put(key, value);
 				}else{
 					Integer value = 1;
@@ -49,7 +49,7 @@ public class 字符串去重 {
 		}
 //		Set<Map.Entry<String,Integer>> set = map.entrySet();
 //		Iterator<Map.Entry<String,Integer>>  it = set.iterator();
-		Iterator<Map.Entry<String,Integer>>  it = map.entrySet().iterator();
+		Iterator<Map.Entry<Character,Integer>>  it = map.entrySet().iterator();
 		String s="";
 		while(it.hasNext()){
 			s+=it.next().getKey();

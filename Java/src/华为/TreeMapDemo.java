@@ -23,13 +23,14 @@ public class TreeMapDemo {
 				
 				@Override
 				public int compare(String o1, String o2) {
-					if(Integer.valueOf(o1)>Integer.valueOf(o2)){
-						return -1;
-					}else if(Integer.valueOf(o1)<Integer.valueOf(o2)){
-						return 1;
-					}else{
-						return 0;
-					}
+//					if(Integer.valueOf(o1)>Integer.valueOf(o2)){
+//						return -1;
+//					}else if(Integer.valueOf(o1)<Integer.valueOf(o2)){
+//						return 1;
+//					}else{
+//						return 0;
+//					}
+					return o2.compareTo(o1);
 				}
 			});
 			for(int i = 0;i<nums.length;i++){
