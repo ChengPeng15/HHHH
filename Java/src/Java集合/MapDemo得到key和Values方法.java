@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.sun.corba.se.impl.encoding.OSFCodeSetRegistry.Entry;
 
 public class MapDemo得到key和Values方法 {
 	public static void main(String[] args) {
