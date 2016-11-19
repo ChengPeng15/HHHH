@@ -17,7 +17,7 @@ public class GreatestSumOfSubArray {
 			}
 			int sum = findGreatestSumOfSubArray(array);
 			int sumDynamic = findGreatestSumOfSubArrayDynamic(array);
-			System.out.println(sum + "" + sumDynamic);
+			System.out.println(sum + " " + sumDynamic);
 		}
 		sc.close();
 	}
